@@ -51,6 +51,46 @@ console.log(typeof bigNumber)
 
 
 
+
+
+// +++++++++++++++++++++++++++++++++
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutTubeName = "ahmedkhanontv"
+let anyOtherName = myYoutTubeName
+
+console.log(myYoutTubeName)
+console.log(anyOtherName)
+
+anyOtherName = "ahmedkhantvonline"
+
+console.log(anyOtherName)
+
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@upi",
+}
+
+let userTwo = userOne
+
+console.log(userOne.email)
+console.log(userTwo.email)
+
+userTwo.email = "user@facebook.com"
+
+console.log(userOne.email, userTwo.email)
+
+
+
+
+
+
+
+
+
+
 ///////////////////////
 /*
 
