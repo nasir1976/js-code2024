@@ -1,38 +1,52 @@
-const name = "ahmed-khan"
-const repoCount = 50
+// String concatenation and template literals
+const name = "ahmed-khan";
+const repoCount = 50;
 
-console.log(name + repoCount + " Value");
-console.log(`His name ${name} age ${repoCount}`);
+// Concatenating strings and numbers, automatically converting numbers to strings
+console.log(name + repoCount + " Value"); // Outputs "ahmed-khan50 Value"
 
+// Using template literals for more readable string interpolation
+console.log(`His name ${name} age ${repoCount}`); // Outputs "His name ahmed-khan age 50"
+
+// Working with String objects
 const gameName = new String("ahmed-khan");
 
-console.log(gameName[0]);
+// Accessing characters in a string
+console.log(gameName[0]); // Outputs "a"
 
-console.log(gameName.__proto__);
+// Accessing the prototype of the String object
+console.log(gameName.__proto__); // Outputs the prototype object of String
 
-console.log(gameName.length);
+// Getting the length of the string
+console.log(gameName.length); // Outputs 10
 
-console.log(gameName.toUpperCase())
+// Converting the string to uppercase
+console.log(gameName.toUpperCase()); // Outputs "AHMED-KHAN"
 
-console.log(gameName.charAt(2))
+// Accessing a character at a specific position
+console.log(gameName.charAt(2)); // Outputs "m"
 
-console.log(gameName.indexOf('h'))
+// Finding the index of a character in the string
+console.log(gameName.indexOf('h')); // Outputs 1
 
-const newString = gameName.substring(0, 3);
+// Extracting a substring from the string
+const newString = gameName.substring(0, 3); // "ahm"
+const newStringA = gameName.substring(1, 3); // "hm"
 
-const newStringA = gameName.substring(1, 3);
+// Slicing a string (note that the negative start index doesn't work as expected in slice)
+const anOtherString = gameName.slice(-6, 4); // "" (due to the way negative start is treated in slice)
 
-const anOtherString = gameName.slice(-6, 4);
+console.log(newString); // "ahm"
+console.log(newStringA); // "hm"
+console.log(anOtherString); // ""
 
-console.log(newString)
-console.log(newStringA)
-console.log(anOtherString)
+// Trimming and replacing characters in strings
+const newStringOne = "   Ahmed ";
+const newStringTwo = "  Ahmed-Khan-";
 
-const newStringOne = "   Ahmed "
-const newStringTwo = "  Ahmed-Khan-"
+console.log(newStringOne); // "   Ahmed "
+console.log(newStringOne.trim()); // "Ahmed"
+console.log(newStringTwo.replace('-', '_').trim()); // "Ahmed_Khan-"
 
-console.log(newStringOne)
-console.log(newStringOne.trim())
-console.log(newStringTwo.replace('-', '_').trim())
-
-console.log(gameName.split('-'))
+// Splitting a string into an array based on a delimiter
+console.log(gameName.split('-')); // ["ahmed", "khan"]
