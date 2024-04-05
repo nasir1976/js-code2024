@@ -71,6 +71,23 @@ console.log(tindersUser.hasOwnProperty("country")); // false
 
 
 
+// Original Object
+const course = {
+    courseName: "JavaScript 2024",
+    coursePrice: 999,
+    courseInstructor: "Ahmed",
+};
 
 
+// Accessing Object Properties
+console.log(course.courseName); // "JavaScript 2024"
 
+
+// Object Destructuring
+const {courseName, coursePrice, courseInstructor: instructor} = course;
+
+
+// Logging Destructured Variables
+console.log(courseName); // "JavaScript 2024"
+console.log(coursePrice); // 999
+console.log(instructor); // "Ahmed"
