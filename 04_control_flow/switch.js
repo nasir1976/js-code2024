@@ -1,45 +1,61 @@
-const month = 3
+// Initialize the month variable
+const month = 3;
 
+// Switch statement to determine the month based on the month number
 switch (month) {
     case 1:
-        console.log("Jan")   
+        // If month is 1, log "Jan"
+        console.log("Jan");   
         break;
     case 2:
-        console.log("Feb")   
+        // If month is 2, log "Feb"
+        console.log("Feb");   
         break;
     case 3:
-        console.log("Mar")  
+        // If month is 3, log "Mar"
+        console.log("Mar");  
         break;
     case 4:
-        console.log("Apr")   
+        // If month is 4, log "Apr"
+        console.log("Apr");   
         break;
-    default: "Default case match"
+    default:
+        // Default case to match any other value
+        console.log("Default case match");
         break;
 }
 
+// Initialize the day variable
+const day = "tuesday";
 
-const day = "tuesday"
-
+// Switch statement to determine the day based on the day string
 switch (day) {
     case "monday":
-        console.log("Mon")   
+        // If day is "monday", log "Mon"
+        console.log("Mon");   
         break;
     case "tuesday":
-        console.log("Tue")   
+        // If day is "tuesday", log "Tue"
+        console.log("Tue");   
         break;
     case "thursday":
-        console.log("Thu")   
+        // If day is "thursday", log "Thu"
+        console.log("Thu");   
         break;
     case "friday":
-        console.log("Fri")   
+        // If day is "friday", log "Fri"
+        console.log("Fri");   
         break;
     case "saturday":
-        console.log("Sat")   
+        // If day is "saturday", log "Sat"
+        console.log("Sat");   
         break;
     case "sunday":
-        console.log("Sun")   
+        // If day is "sunday", log "Sun"
+        console.log("Sun");   
         break;
     default:
-        console.log("Default case match")
+        // Default case to match any other value
+        console.log("Default case match");
         break;
 }
