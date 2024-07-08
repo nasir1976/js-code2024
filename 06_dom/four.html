@@ -24,7 +24,14 @@ addLanguage("C++")
 
 
     
+function addOptiLang(langName){
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(langName));
+    document.querySelector('.language').appendChild(li);
 
+addOptiLang('GoLang')
+
+}
     
 
 
@@ -32,12 +39,6 @@ addLanguage("C++")
 
 
 
-function addOptiLang (langName) {
-    const li = document.createElement('li');
-    li.appendChild(document.createTextNode(langName))
-    document.querySelector('.language').appendChild(li)
 
-    }
-    addOptiLang("Java")
 </script>
 </html>
