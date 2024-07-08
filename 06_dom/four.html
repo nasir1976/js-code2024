@@ -28,14 +28,16 @@ function addOptiLang(langName){
     const li = document.createElement('li');
     li.appendChild(document.createTextNode(langName));
     document.querySelector('.language').appendChild(li);
-
-addOptiLang('GoLang')
-
 }
     
+addOptiLang('GoLang')
 
 
 
+// Edit
+
+const secLang = document.querySelector("li:nth-chlid(2)")
+secLang.innerHTML = 'Mojo';
 
 
 
